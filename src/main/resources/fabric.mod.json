@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "pistachio",
+	"version": "${version}",
+	"name": "Pistachio",
+	"description": "It's called pistachio since its not vanilla",
+	"authors": [
+		"Barasel321"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": ""
+	},
+	"license": "MIT",
+	"icon": "assets/pistachio/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.barasel321.pistachio.Pistachio"
+		],
+		"client": [
+			"net.barasel321.pistachio.PistachioClient"
+		],
+		"fabric-datagen": [
+			"net.barasel321.pistachio.PistachioDataGenerator"
+		]
+	},
+	"mixins": [
+		"pistachio.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
