@@ -1,5 +1,7 @@
 package net.barasel321.pistachio;
 
+import net.barasel321.pistachio.item.PistachioItemGroups;
+import net.barasel321.pistachio.item.PistachioItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -13,6 +15,7 @@ public class Pistachio implements ModInitializer {
 	@Override
 	public void onInitialize() {
 
-		LOGGER.info("Hello Fabric world!");
+		PistachioItems.registerModItems();
+		PistachioItemGroups.registerItemGroups();
 	}
 }
