@@ -1,5 +1,6 @@
 package net.barasel321.pistachio;
 
+import net.barasel321.pistachio.block.PistachioBlocks;
 import net.barasel321.pistachio.item.PistachioItemGroups;
 import net.barasel321.pistachio.item.PistachioItems;
 import net.fabricmc.api.ModInitializer;
@@ -17,5 +18,6 @@ public class Pistachio implements ModInitializer {
 
 		PistachioItems.registerModItems();
 		PistachioItemGroups.registerItemGroups();
+		PistachioBlocks.registerModBlocks();
 	}
 }

@@ -1,6 +1,7 @@
 package net.barasel321.pistachio.item;
 
 import net.barasel321.pistachio.Pistachio;
+import net.barasel321.pistachio.block.PistachioBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -17,6 +18,8 @@ public class PistachioItemGroups {
                     .icon(() -> new ItemStack(PistachioItems.TEST_ITEM)).entries((displayContext, entries) -> {
 
                         entries.add(PistachioItems.TEST_ITEM);
+
+                        entries.add(PistachioBlocks.TEST_BLOCK);
                     }).build());
 
     public static void registerItemGroups(){

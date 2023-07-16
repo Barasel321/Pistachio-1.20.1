@@ -1,4 +1,7 @@
 {
   "item.pistachio.test_item": "Test Item",
+
+  "block.pistachio.test_block": "Test Block",
+
   "itemgroup.pistachio": "Pistachio Mod"
 }
