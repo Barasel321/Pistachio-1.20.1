@@ -18,6 +18,7 @@ public class PistachioItemGroups {
                     .icon(() -> new ItemStack(PistachioItems.TEST_ITEM)).entries((displayContext, entries) -> {
 
                         entries.add(PistachioItems.TEST_ITEM);
+                        entries.add(PistachioItems.FIRE_WAND);
 
                         entries.add(PistachioBlocks.TEST_BLOCK);
                     }).build());

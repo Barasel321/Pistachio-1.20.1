@@ -1,6 +1,7 @@
 package net.barasel321.pistachio.item;
 
 import net.barasel321.pistachio.Pistachio;
+import net.barasel321.pistachio.item.custom.FireWandItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -10,6 +11,7 @@ import net.minecraft.util.Identifier;
 public class PistachioItems {
 
         public static final Item TEST_ITEM = registerItem("test_item",new Item(new FabricItemSettings()));
+        public static final Item FIRE_WAND = registerItem("fire_wand",new FireWandItem(new FabricItemSettings().maxCount(1)));
 
 
     private static Item registerItem(String name, Item item){
