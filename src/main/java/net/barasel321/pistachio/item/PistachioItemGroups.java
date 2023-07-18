@@ -21,6 +21,7 @@ public class PistachioItemGroups {
                         entries.add(PistachioItems.FIRE_WAND);
 
                         entries.add(PistachioBlocks.TEST_BLOCK);
+                        entries.add(PistachioBlocks.TOFU_BLOCK);
                     }).build());
 
     public static void registerItemGroups(){

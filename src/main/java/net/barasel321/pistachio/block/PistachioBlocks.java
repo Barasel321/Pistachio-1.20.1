@@ -1,6 +1,7 @@
 package net.barasel321.pistachio.block;
 
 import net.barasel321.pistachio.Pistachio;
+import net.barasel321.pistachio.block.custom.TofuBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
@@ -15,6 +16,9 @@ public class PistachioBlocks {
 
     public static final Block TEST_BLOCK = registerBlock("test_block",
             new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
+
+    public static final Block TOFU_BLOCK = registerBlock("tofu_block",
+            new TofuBlock(FabricBlockSettings.copyOf(Blocks.HAY_BLOCK)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

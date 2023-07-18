@@ -8,6 +8,8 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
 
+import java.util.concurrent.TimeUnit;
+
 public class FireWandItem extends Item {
 
     public FireWandItem(Settings settings) {
@@ -22,6 +24,8 @@ public class FireWandItem extends Item {
             fireball.setVelocity(user, user.getPitch(), user.getYaw(), 0.0f, 1.5f, 1.0f);
             fireball.setPosition(fireball.getX(), user.getBodyY(0.5) + 0.5, user.getZ());
             world.spawnEntity(fireball);
+
+
 
             user.getItemCooldownManager().set(this,40);
         }

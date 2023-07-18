@@ -3,6 +3,7 @@ package net.barasel321.pistachio;
 import net.barasel321.pistachio.block.PistachioBlocks;
 import net.barasel321.pistachio.item.PistachioItemGroups;
 import net.barasel321.pistachio.item.PistachioItems;
+import net.barasel321.pistachio.painting.PistachioPaintings;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -19,5 +20,6 @@ public class Pistachio implements ModInitializer {
 		PistachioItems.registerModItems();
 		PistachioItemGroups.registerItemGroups();
 		PistachioBlocks.registerModBlocks();
+		PistachioPaintings.registerPaintings();
 	}
 }

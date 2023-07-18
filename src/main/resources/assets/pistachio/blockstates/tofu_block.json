@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "pistachio:block/tofu_block"
+    }
+  }
+}
