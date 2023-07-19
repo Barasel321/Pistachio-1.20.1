@@ -18,7 +18,7 @@ public class PistachioBlocks {
             new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
 
     public static final Block TOFU_BLOCK = registerBlock("tofu_block",
-            new TofuBlock(FabricBlockSettings.copyOf(Blocks.HAY_BLOCK)));
+            new TofuBlock(FabricBlockSettings.copyOf(Blocks.HAY_BLOCK).strength(0.2f)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

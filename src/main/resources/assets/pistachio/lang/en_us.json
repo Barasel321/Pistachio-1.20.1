@@ -5,5 +5,9 @@
   "block.pistachio.test_block": "Test Block",
   "block.pistachio.tofu_block": "Tofu Block",
 
-  "itemgroup.pistachio": "Pistachio Mod"
+  "itemgroup.pistachio": "Pistachio Mod",
+
+  "effect.pistachio.stun": "Stun",
+  "effect.pistachio.phage": "Phage"
+
 }

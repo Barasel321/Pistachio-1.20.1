@@ -1,6 +1,7 @@
 package net.barasel321.pistachio;
 
 import net.barasel321.pistachio.block.PistachioBlocks;
+import net.barasel321.pistachio.effect.PistachioEffects;
 import net.barasel321.pistachio.item.PistachioItemGroups;
 import net.barasel321.pistachio.item.PistachioItems;
 import net.barasel321.pistachio.painting.PistachioPaintings;
@@ -21,5 +22,6 @@ public class Pistachio implements ModInitializer {
 		PistachioItemGroups.registerItemGroups();
 		PistachioBlocks.registerModBlocks();
 		PistachioPaintings.registerPaintings();
+		PistachioEffects.registerEffects();
 	}
 }
