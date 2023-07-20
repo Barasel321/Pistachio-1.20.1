@@ -16,7 +16,16 @@ public class PhageSwordItem extends SwordItem {
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
 
-        target.addStatusEffect(new StatusEffectInstance(PistachioEffects.PHAGE,10,2));
+        StatusEffectInstance effect = target.getStatusEffect(PistachioEffects.PHAGE);
+        int amplifier;
+
+        if(effect == null){
+            amplifier = 0;
+        }else{
+            amplifier = effect.getAmplifier();
+        }
+
+        target.addStatusEffect(new StatusEffectInstance(PistachioEffects.PHAGE,40,amplifier + 1));
 
         return super.postHit(stack,target,attacker);
     }

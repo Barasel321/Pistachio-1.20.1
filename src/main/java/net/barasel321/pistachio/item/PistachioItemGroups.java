@@ -22,6 +22,9 @@ public class PistachioItemGroups {
 
                         entries.add(PistachioBlocks.TEST_BLOCK);
                         entries.add(PistachioBlocks.TOFU_BLOCK);
+
+                        entries.add(PistachioItems.CAT_ITEM);
+                        entries.add(PistachioItems.PHAGE_SWORD);
                     }).build());
 
     public static void registerItemGroups(){

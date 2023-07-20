@@ -5,6 +5,7 @@ import net.barasel321.pistachio.effect.PistachioEffects;
 import net.barasel321.pistachio.item.PistachioItemGroups;
 import net.barasel321.pistachio.item.PistachioItems;
 import net.barasel321.pistachio.painting.PistachioPaintings;
+import net.barasel321.pistachio.util.PistachioLootTableModifiers;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -23,5 +24,7 @@ public class Pistachio implements ModInitializer {
 		PistachioBlocks.registerModBlocks();
 		PistachioPaintings.registerPaintings();
 		PistachioEffects.registerEffects();
+
+		PistachioLootTableModifiers.modifyLootTables();
 	}
 }

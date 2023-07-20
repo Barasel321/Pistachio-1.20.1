@@ -1,6 +1,8 @@
 {
   "item.pistachio.test_item": "Test Item",
   "item.pistachio.fire_wand": "Fire Wand",
+  "item.pistachio.cat_item": "Cat",
+  "item.pistachio.phage_sword": "Phage Sword",
 
   "block.pistachio.test_block": "Test Block",
   "block.pistachio.tofu_block": "Tofu Block",

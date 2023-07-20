@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "pistachio:cat_item"
+        }
+    },
+    "result": {
+        "item": "pistachio:tofu_block",
+        "count": 1
+    }
+}
