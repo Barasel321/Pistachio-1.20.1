@@ -25,7 +25,7 @@ public class PhageSwordItem extends SwordItem {
             amplifier = effect.getAmplifier();
         }
 
-        target.addStatusEffect(new StatusEffectInstance(PistachioEffects.PHAGE,40,amplifier + 1));
+        target.addStatusEffect(new StatusEffectInstance(PistachioEffects.PHAGE,300,amplifier + 1));
 
         return super.postHit(stack,target,attacker);
     }

@@ -10,6 +10,10 @@
   "itemgroup.pistachio": "Pistachio Mod",
 
   "effect.pistachio.stun": "Stun",
-  "effect.pistachio.phage": "Phage"
+  "effect.pistachio.phage": "Phage",
 
+  "enchantment.pistachio.phagephilic": "Phagephilic",
+
+  "key.category.pistachio": "Pistachio Keys",
+  "key.pistachio.cast": "Cast Ability"
 }

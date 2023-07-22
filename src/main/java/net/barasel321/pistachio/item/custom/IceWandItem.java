@@ -8,11 +8,9 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
 
-import java.util.concurrent.TimeUnit;
+public class IceWandItem extends Item {
 
-public class FireWandItem extends Item {
-
-    public FireWandItem(Settings settings) {
+    public IceWandItem(Settings settings) {
         super(settings);
     }
 
