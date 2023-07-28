@@ -1,0 +1,86 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"2": "pistachio:block/phage_fire_0",
+		"3": "pistachio:block/phage_fire_1",
+		"particle": "pistachio:block/phage_fire_0"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 16.009],
+			"to": [16, 22.4, 16.009],
+			"shade": false,
+			"rotation": {"angle": 0, "axis": "y", "origin": [4.0005, 11.2, 12.009]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#3"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#3"}
+			}
+		},
+		{
+			"from": [0.001, 0, 0.009],
+			"to": [0.001, 22.4, 16.009],
+			"shade": false,
+			"rotation": {"angle": 0, "axis": "y", "origin": [4.0005, 11.2, 12.009]},
+			"faces": {
+				"east": {"uv": [0, 0, 16, 16], "texture": "#3"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#3"}
+			}
+		},
+		{
+			"from": [15.999, 0, 0.01],
+			"to": [15.999, 22.4, 16.01],
+			"shade": false,
+			"rotation": {"angle": 0, "axis": "y", "origin": [11.9995, 11.2, 4.01]},
+			"faces": {
+				"east": {"uv": [0, 0, 16, 16], "texture": "#3"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#3"}
+			}
+		},
+		{
+			"from": [0, 0, 0.01],
+			"to": [16, 22.4, 0.01],
+			"shade": false,
+			"rotation": {"angle": 0, "axis": "y", "origin": [11.9995, 11.2, 4.01]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#3"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#3"}
+			}
+		},
+		{
+			"from": [0, 0, 8.8],
+			"to": [16, 22.4, 8.8],
+			"shade": false,
+			"rotation": {"angle": -22.5, "axis": "x", "origin": [8, 8, 8], "rescale": true},
+			"faces": {
+				"south": {"uv": [0, 0, 16, 16], "texture": "#2"}
+			}
+		},
+		{
+			"from": [0, 0, 7.2],
+			"to": [16, 22.4, 7.2],
+			"shade": false,
+			"rotation": {"angle": 22.5, "axis": "x", "origin": [8, 8, 8], "rescale": true},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#2"}
+			}
+		},
+		{
+			"from": [8.8, 0, 0],
+			"to": [8.8, 22.4, 16],
+			"shade": false,
+			"rotation": {"angle": -22.5, "axis": "z", "origin": [8, 8, 8], "rescale": true},
+			"faces": {
+				"west": {"uv": [0, 0, 16, 16], "texture": "#2"}
+			}
+		},
+		{
+			"from": [7.2, 0, 0],
+			"to": [7.2, 22.4, 16],
+			"shade": false,
+			"rotation": {"angle": 22.5, "axis": "z", "origin": [8, 8, 8], "rescale": true},
+			"faces": {
+				"east": {"uv": [0, 0, 16, 16], "texture": "#2"}
+			}
+		}
+	]
+}

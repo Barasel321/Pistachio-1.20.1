@@ -19,6 +19,7 @@ public class PistachioItemGroups {
 
                         entries.add(PistachioItems.TEST_ITEM);
                         entries.add(PistachioItems.FIRE_WAND);
+                        entries.add(PistachioItems.ICE_WAND);
 
                         entries.add(PistachioBlocks.TEST_BLOCK);
                         entries.add(PistachioBlocks.TOFU_BLOCK);
