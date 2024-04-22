@@ -16,20 +16,16 @@ import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.Vec3i;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.BlockView;
-import net.minecraft.world.LightType;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
 public class DryIceBlock extends IceBlock {
 
-    public static final int MAX_AGE = 3;
     public static final IntProperty AGE = Properties.AGE_3;
-    private static final int NEIGHBORS_CHECKED_ON_SCHEDULED_TICK = 4;
-    private static final int NEIGHBORS_CHECKED_ON_NEIGHBOR_UPDATE = 2;
 
     public DryIceBlock(AbstractBlock.Settings settings) {
         super(settings);
-        this.setDefaultState((BlockState)((BlockState)this.stateManager.getDefaultState()).with(AGE, 0));
+        this.setDefaultState((this.stateManager.getDefaultState()).with(AGE, 0));
     }
 
     @Override
@@ -42,7 +38,7 @@ public class DryIceBlock extends IceBlock {
         if ((random.nextInt(3) == 0 || this.canMelt(world, pos, 4)) && world.getLightLevel(pos) > 11 - state.get(AGE) - state.getOpacity(world, pos) && this.increaseAge(state, world, pos)) {
             BlockPos.Mutable mutable = new BlockPos.Mutable();
             for (Direction direction : Direction.values()) {
-                mutable.set((Vec3i)pos, direction);
+                mutable.set(pos, direction);
                 BlockState blockState = world.getBlockState(mutable);
                 if (!blockState.isOf(this) || this.increaseAge(blockState, world, mutable)) continue;
                 world.scheduleBlockTick(mutable, this, MathHelper.nextInt(random, 20, 40));
@@ -55,7 +51,7 @@ public class DryIceBlock extends IceBlock {
     private boolean increaseAge(BlockState state, World world, BlockPos pos) {
         int i = state.get(AGE);
         if (i < 3) {
-            world.setBlockState(pos, (BlockState)state.with(AGE, i + 1), Block.NOTIFY_LISTENERS);
+            world.setBlockState(pos,state.with(AGE, i + 1), Block.NOTIFY_LISTENERS);
             return false;
         }
         this.melt(state, world, pos);
@@ -74,7 +70,7 @@ public class DryIceBlock extends IceBlock {
         int i = 0;
         BlockPos.Mutable mutable = new BlockPos.Mutable();
         for (Direction direction : Direction.values()) {
-            mutable.set((Vec3i)pos, direction);
+            mutable.set(pos, direction);
             if (!world.getBlockState(mutable).isOf(this) || ++i < maxNeighbors) continue;
             return false;
         }

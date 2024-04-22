@@ -1,6 +1,7 @@
 package net.barasel321.pistachio.item;
 
 import net.barasel321.pistachio.Pistachio;
+import net.barasel321.pistachio.item.custom.EnderWandItem;
 import net.barasel321.pistachio.item.custom.FireWandItem;
 import net.barasel321.pistachio.item.custom.IceWandItem;
 import net.barasel321.pistachio.item.custom.PhageSwordItem;
@@ -17,10 +18,13 @@ public class PistachioItems {
         public static final Item TEST_ITEM = registerItem("test_item",new Item(new FabricItemSettings()));
         public static final Item FIRE_WAND = registerItem("fire_wand",new FireWandItem(new FabricItemSettings().maxCount(1)));
         public static final Item ICE_WAND = registerItem("ice_wand",new IceWandItem(new FabricItemSettings().maxCount(1)));
+        public static final Item ENDER_WAND = registerItem("ender_wand",new EnderWandItem(new FabricItemSettings().maxCount(1)));
 
-        public static final Item CAT_ITEM = registerItem("cat_item",new Item(new FabricItemSettings().food(
-                new FoodComponent.Builder().hunger(10).saturationModifier(2f).meat().build()
+    public static final Item CAT_ITEM = registerItem("cat_item",new Item(new FabricItemSettings().food(
+                new FoodComponent.Builder().hunger(6).saturationModifier(2f).meat().build()
         )));
+
+//        public static final Item TOFU_SPAWN_EGG = registerItem("tofu_spawn_egg",new SpawnEggItem(EntityType.CAT,1,1,new FabricItemSettings()));
 
         public static final Item PHAGE_SWORD = registerItem("phage_sword",new PhageSwordItem(ToolMaterials.IRON,0,-2.4f,new FabricItemSettings()));
 
